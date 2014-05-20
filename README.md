@@ -138,13 +138,20 @@ remserial [-r machinename] [-p netport] [-s "stty params"] device
 
 -r machinename		The remote machine name to connect to.  If not
 			specified, then this is the server side.
--p netport		Specifiy IP port# (default 23000)
--s "stty params"	If serial port, specify stty parameters, see man stty
--d			Run as daemon programs
--x debuglevel		Set debug level, 0 is default, 1,2 give more info
+
+-p netport		Specifiy IP port# (default 23000).
+
+-s "stty params"	If serial port, specify stty parameters, see man stty.
+
+-d			Run as daemon programs.
+
+-x debuglevel		Set debug level, 0 is default, 1,2 give more info.
+
 -l linkname		If the device is /dev/ptmx, creates a symbolic link
                         to the corresponding slave pseudo-tty so that another
 			application has a static device name to use.
--m max-connections	Maximum number of simultaneous client connections to allow
+
+-m max-connections	Maximum number of simultaneous client connections to allow.
+
 device			Character oriented device node such as /dev/ttyS0.
 
