@@ -131,27 +131,30 @@ Other Linux program useful with remserial
   if it has some sort of command line interface usable over the serial port.
 
 
-remserial Usage:
----------------
+Usage:
+======
 
-remserial [-r machinename] [-p netport] [-s "stty params"] device
+	remserial [-r machinename] [-p netport] [-s "stty params"] device
+	
+Options:
+========
 
--r machinename		The remote machine name to connect to.  If not
-			specified, then this is the server side.
-
--p netport		Specifiy IP port# (default 23000).
-
--s "stty params"	If serial port, specify stty parameters, see man stty.
-
--d			Run as daemon programs.
-
--x debuglevel		Set debug level, 0 is default, 1,2 give more info.
-
--l linkname		If the device is /dev/ptmx, creates a symbolic link
-                        to the corresponding slave pseudo-tty so that another
-			application has a static device name to use.
-
--m max-connections	Maximum number of simultaneous client connections to allow.
-
-device			Character oriented device node such as /dev/ttyS0.
+  `-r machinename`	The remote machine name to connect to. If not specified, 
+  			then this is the server side.
+  			
+  `-p netport`		Specifiy IP port# (default 23000).
+  
+  `-s "stty params"`	If serial port, specify stty parameters, see man stty.
+  
+  `-d`			Run as daemon programs.
+  
+  `-x debuglevel`	Set debug level, 0 is default, 1,2 give more info.
+  
+  `-l linkname`		If the device is /dev/ptmx, creates a symbolic link
+  			to the corresponding slave pseudo-tty so that another application
+  			has a static device name to use.
+  			
+  `-m max-connections`	Maximum number of simultaneous client connections to allow.
+  
+  `device`		Character oriented device node such as /dev/ttyS0.
 
